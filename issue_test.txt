@@ -1,1 +1,15 @@
-이슈 연동 실습 중입니다.
+echo "이슈 연동 실습 중입니다." > issue_test.txt
+
+github에서 이슈 생성... 번호 #3
+
+git add .
+git commit -m "fix: #3 issue_test.txt 내용 수정"
+git push origin main
+
+github에서 이슈 #3 Closed로 바뀜
+github에서 이슈 생성... 번호 #4
+
+issue_test.txt 변경
+git add .
+git commit -m "Close: #4"
+git push origin main
